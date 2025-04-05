@@ -8,7 +8,7 @@ body.page1, body.page2 {
 }
 
 body.page1 {
-    background-image: url("imahes/homebg.png");
+    background-image: url("homebg.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
