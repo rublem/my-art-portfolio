@@ -1,0 +1,137 @@
+body.page1, body.page2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #F4F3EA;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+body.page1 {
+    background-image: url("imahes/homebg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+body.page2 {
+    background-color: #333D51;
+    height: 100vh;
+}
+nav {
+    background-color: #D3AC2B;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #333D51;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+a:hover {
+    color: #FFFFFF;
+}
+
+.herop1 {
+    padding: 100px 20px;
+}
+
+.herop1 h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.herop1 p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 50px 20px;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 0 15px #000033;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+footer {
+    margin-top: auto;
+    padding-top: 10px;
+    border-top: 1px solid #d3ac2b;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+@media (max-width: 1200px) {
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 30px 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .herop1 {
+        padding: 50px 10px;
+    }
+
+    .herop1 h1 {
+        font-size: 28px;
+    }
+
+    .herop1 p {
+        font-size: 16px;
+    }
+
+    footer {
+        font-size: 0.7em;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 30px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        padding: 20px 10px;
+    }
+
+    .gallery-item img {
+        max-height: 300px;
+    }
+}
